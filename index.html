@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kawaii Cafe</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#f3f1ec;
+  font-family:Arial,sans-serif;
+  color:#45424c;
+}
+
+.app{
+  max-width:700px;
+  margin:auto;
+  min-height:100vh;
+  background:#fffafd;
+  padding-bottom:90px;
+}
+
+/* HEADER */
+
+header{
+  height:78px;
+  background:white;
+  border-bottom:1px solid #f2dce8;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 25px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#e765ad;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.logoIcon{
+  width:50px;
+  height:50px;
+  border:2px solid #f4d7e7;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+}
+
+.cart{
+  width:50px;
+  height:50px;
+  border:2px solid #f4d7e7;
+  border-radius:16px;
+  background:white;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* CONTENT */
+
+main{
+  padding:25px 25px 110px;
+}
+
+/* HERO */
+
+.hero{
+  height:185px;
+  border-radius:32px;
+  background:linear-gradient(120deg,#ffd5ea,#fff0d7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:42px;
+  color:#282e3a;
+  margin-bottom:12px;
+}
+
+.hero p{
+  color:#73727a;
+  font-size:17px;
+  font-weight:bold;
+}
+
+/* SEARCH */
+
+.search{
+  margin-top:20px;
+  background:white;
+  border:2px solid #f4dce8;
+  border-radius:18px;
+  padding:13px 16px;
+  display:flex;
+  gap:10px;
+}
+
+.search input{
+  width:100%;
+  border:0;
+  outline:0;
+  font-size:14px;
+}
+
+/* MOOD */
+
+.moods{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding:20px 0;
+}
+
+.mood{
+  flex-shrink:0;
+  border:0;
+  background:white;
+  padding:12px 18px;
+  border-radius:25px;
+  font-weight:bold;
+  color:#777;
+  cursor:pointer;
+}
+
+.mood.active{
+  background:#f25baa;
+  color:white;
+}
+
+/* MENU */
+
+.menu{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.card{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 6px 18px #9b
